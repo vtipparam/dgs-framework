@@ -28,7 +28,7 @@ plugins {
     `java-library`
     id("nebula.netflixoss") version "9.4.2"
     id("nebula.dependency-recommender") version "10.0.1"
-    id("org.jlleitschuh.gradle.ktlint") version "10.0.0"
+    id("org.jmailen.kotlinter") version "3.4.4"
     kotlin("jvm") version Versions.KOTLIN_VERSION
     kotlin("kapt") version Versions.KOTLIN_VERSION
     idea
@@ -67,7 +67,7 @@ configure(subprojects.filterNot { it in internalBomModules }) {
         plugin("java-library")
         plugin("kotlin")
         plugin("kotlin-kapt")
-        plugin("org.jlleitschuh.gradle.ktlint")
+        plugin("org.jmailen.kotlinter")
     }
 
     /**
@@ -128,7 +128,10 @@ configure(subprojects.filterNot { it in internalBomModules }) {
         }
     }
 
-    configure<org.jlleitschuh.gradle.ktlint.KtlintExtension> {
-        disabledRules.set(setOf("no-wildcard-imports"))
+    kotlinter {
+        indentSize = 4
+        reporters = arrayOf("checkstyle", "plain")
+        experimentalRules = false
+        disabledRules = arrayOf("no-wildcard-imports")
     }
 }
