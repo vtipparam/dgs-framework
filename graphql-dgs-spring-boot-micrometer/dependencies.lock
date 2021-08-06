@@ -44,7 +44,7 @@
                 "com.netflix.graphql.dgs:graphql-dgs-mocking",
                 "com.netflix.graphql.dgs:graphql-error-types"
             ],
-            "locked": "16.2"
+            "locked": "17.0"
         },
         "com.jayway.jsonpath:json-path": {
             "firstLevelTransitive": [
@@ -116,7 +116,7 @@
             "project": true
         },
         "com.netflix.spectator:spectator-api": {
-            "locked": "0.131.0"
+            "locked": "0.132.0"
         },
         "commons-codec:commons-codec": {
             "locked": "1.14"
@@ -128,7 +128,7 @@
             "firstLevelTransitive": [
                 "com.netflix.graphql.dgs:graphql-dgs-client"
             ],
-            "locked": "3.4.7"
+            "locked": "3.4.8"
         },
         "net.bytebuddy:byte-buddy": {
             "locked": "1.10.20"
@@ -172,6 +172,14 @@
         }
     },
     "kapt": {
+        "org.springframework.boot:spring-boot-autoconfigure-processor": {
+            "locked": "2.3.9.RELEASE"
+        },
+        "org.springframework.boot:spring-boot-configuration-processor": {
+            "locked": "2.3.9.RELEASE"
+        }
+    },
+    "kaptClasspath_kaptKotlin": {
         "org.springframework.boot:spring-boot-autoconfigure-processor": {
             "locked": "2.3.9.RELEASE"
         },
@@ -314,7 +322,7 @@
             "firstLevelTransitive": [
                 "com.netflix.graphql.dgs:graphql-dgs"
             ],
-            "locked": "0.6.3"
+            "locked": "0.6.4"
         },
         "com.fasterxml.jackson.datatype:jackson-datatype-jsr310": {
             "firstLevelTransitive": [
@@ -346,7 +354,7 @@
                 "com.netflix.graphql.dgs:graphql-dgs-mocking",
                 "com.netflix.graphql.dgs:graphql-error-types"
             ],
-            "locked": "16.2"
+            "locked": "17.0"
         },
         "com.jayway.jsonpath:json-path": {
             "firstLevelTransitive": [
@@ -378,7 +386,7 @@
             "project": true
         },
         "com.netflix.spectator:spectator-api": {
-            "locked": "0.131.0"
+            "locked": "0.132.0"
         },
         "commons-codec:commons-codec": {
             "locked": "1.14"
@@ -416,7 +424,7 @@
             "firstLevelTransitive": [
                 "com.netflix.graphql.dgs:graphql-dgs-mocking"
             ],
-            "locked": "1.7.30"
+            "locked": "1.7.31"
         },
         "org.springframework.boot:spring-boot-dependencies": {
             "locked": "2.3.9.RELEASE"
@@ -491,7 +499,7 @@
                 "com.netflix.graphql.dgs:graphql-dgs-mocking",
                 "com.netflix.graphql.dgs:graphql-error-types"
             ],
-            "locked": "16.2"
+            "locked": "17.0"
         },
         "com.jayway.jsonpath:json-path": {
             "firstLevelTransitive": [
@@ -563,7 +571,7 @@
             "project": true
         },
         "com.netflix.spectator:spectator-api": {
-            "locked": "0.131.0"
+            "locked": "0.132.0"
         },
         "commons-codec:commons-codec": {
             "locked": "1.14"
@@ -572,13 +580,13 @@
             "locked": "1.5.11"
         },
         "io.mockk:mockk": {
-            "locked": "1.11.0"
+            "locked": "1.12.0"
         },
         "io.projectreactor:reactor-core": {
             "firstLevelTransitive": [
                 "com.netflix.graphql.dgs:graphql-dgs-client"
             ],
-            "locked": "3.4.7"
+            "locked": "3.4.8"
         },
         "net.bytebuddy:byte-buddy": {
             "locked": "1.10.20"
@@ -629,7 +637,7 @@
             "firstLevelTransitive": [
                 "com.netflix.graphql.dgs:graphql-dgs"
             ],
-            "locked": "0.6.3"
+            "locked": "0.6.4"
         },
         "com.fasterxml.jackson.core:jackson-annotations": {
             "firstLevelTransitive": [
@@ -671,7 +679,7 @@
                 "com.netflix.graphql.dgs:graphql-dgs-mocking",
                 "com.netflix.graphql.dgs:graphql-error-types"
             ],
-            "locked": "16.2"
+            "locked": "17.0"
         },
         "com.jayway.jsonpath:json-path": {
             "firstLevelTransitive": [
@@ -743,7 +751,7 @@
             "project": true
         },
         "com.netflix.spectator:spectator-api": {
-            "locked": "0.131.0"
+            "locked": "0.132.0"
         },
         "commons-codec:commons-codec": {
             "locked": "1.14"
@@ -752,13 +760,13 @@
             "locked": "1.5.11"
         },
         "io.mockk:mockk": {
-            "locked": "1.11.0"
+            "locked": "1.12.0"
         },
         "io.projectreactor:reactor-core": {
             "firstLevelTransitive": [
                 "com.netflix.graphql.dgs:graphql-dgs-client"
             ],
-            "locked": "3.4.7"
+            "locked": "3.4.8"
         },
         "jakarta.servlet:jakarta.servlet-api": {
             "firstLevelTransitive": [
@@ -767,7 +775,7 @@
             "locked": "4.0.4"
         },
         "net.bytebuddy:byte-buddy": {
-            "locked": "1.10.20"
+            "locked": "1.11.5"
         },
         "org.jetbrains.kotlin:kotlin-bom": {
             "locked": "1.4.32"
@@ -807,7 +815,7 @@
             "firstLevelTransitive": [
                 "com.netflix.graphql.dgs:graphql-dgs-mocking"
             ],
-            "locked": "1.7.30"
+            "locked": "1.7.31"
         },
         "org.springframework.boot:spring-boot-actuator-autoconfigure": {
             "locked": "2.3.9.RELEASE"

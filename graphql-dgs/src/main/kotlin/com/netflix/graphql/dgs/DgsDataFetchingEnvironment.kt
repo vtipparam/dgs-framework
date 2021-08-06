@@ -19,6 +19,7 @@ package com.netflix.graphql.dgs
 import com.netflix.graphql.dgs.context.DgsContext
 import com.netflix.graphql.dgs.exceptions.MultipleDataLoadersDefinedException
 import com.netflix.graphql.dgs.exceptions.NoDataLoaderFoundException
+import graphql.GraphQLContext
 import graphql.cachecontrol.CacheControl
 import graphql.execution.ExecutionId
 import graphql.execution.ExecutionStepInfo
@@ -34,6 +35,8 @@ import org.dataloader.DataLoaderRegistry
 import java.util.*
 
 class DgsDataFetchingEnvironment(private val dfe: DataFetchingEnvironment) : DataFetchingEnvironment {
+
+    private val graphQLContext: GraphQLContext = dfe.graphQlContext
 
     fun getDgsContext(): DgsContext {
         val context = dfe.getContext<Any>()
@@ -78,8 +81,13 @@ class DgsDataFetchingEnvironment(private val dfe: DataFetchingEnvironment) : Dat
         return dfe.getArgumentOrDefault(name, defaultValue)
     }
 
+    @Deprecated(message = "Use getGraphQLContext() instead.", replaceWith = ReplaceWith(expression = "getGraphQLContext().get()"))
     override fun <T : Any?> getContext(): T {
         return dfe.getContext()
+    }
+
+    override fun getGraphQlContext(): GraphQLContext {
+        return dfe.graphQlContext
     }
 
     override fun <T : Any?> getLocalContext(): T {

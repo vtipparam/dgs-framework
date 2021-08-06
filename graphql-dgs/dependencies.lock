@@ -27,7 +27,7 @@
     },
     "compileClasspath": {
         "com.apollographql.federation:federation-graphql-java-support": {
-            "locked": "0.6.3"
+            "locked": "0.6.4"
         },
         "com.fasterxml.jackson.datatype:jackson-datatype-jsr310": {
             "locked": "2.12.3"
@@ -43,7 +43,7 @@
                 "com.netflix.graphql.dgs:graphql-dgs-mocking",
                 "com.netflix.graphql.dgs:graphql-error-types"
             ],
-            "locked": "16.2"
+            "locked": "17.0"
         },
         "com.jayway.jsonpath:json-path": {
             "locked": "2.6.0"
@@ -100,6 +100,14 @@
         }
     },
     "kapt": {
+        "org.springframework.boot:spring-boot-autoconfigure-processor": {
+            "locked": "2.3.9.RELEASE"
+        },
+        "org.springframework.boot:spring-boot-configuration-processor": {
+            "locked": "2.3.9.RELEASE"
+        }
+    },
+    "kaptClasspath_kaptKotlin": {
         "org.springframework.boot:spring-boot-autoconfigure-processor": {
             "locked": "2.3.9.RELEASE"
         },
@@ -239,7 +247,7 @@
     },
     "runtimeClasspath": {
         "com.apollographql.federation:federation-graphql-java-support": {
-            "locked": "0.6.3"
+            "locked": "0.6.4"
         },
         "com.fasterxml.jackson.datatype:jackson-datatype-jsr310": {
             "locked": "2.12.3"
@@ -261,7 +269,7 @@
                 "com.netflix.graphql.dgs:graphql-dgs-mocking",
                 "com.netflix.graphql.dgs:graphql-error-types"
             ],
-            "locked": "16.2"
+            "locked": "17.0"
         },
         "com.jayway.jsonpath:json-path": {
             "locked": "2.6.0"
@@ -345,7 +353,7 @@
     },
     "testCompileClasspath": {
         "com.apollographql.federation:federation-graphql-java-support": {
-            "locked": "0.6.3"
+            "locked": "0.6.4"
         },
         "com.fasterxml.jackson.datatype:jackson-datatype-jsr310": {
             "locked": "2.12.3"
@@ -361,7 +369,7 @@
                 "com.netflix.graphql.dgs:graphql-dgs-mocking",
                 "com.netflix.graphql.dgs:graphql-error-types"
             ],
-            "locked": "16.2"
+            "locked": "17.0"
         },
         "com.jayway.jsonpath:json-path": {
             "locked": "2.6.0"
@@ -380,13 +388,13 @@
             "project": true
         },
         "io.mockk:mockk": {
-            "locked": "1.11.0"
+            "locked": "1.12.0"
         },
         "io.projectreactor:reactor-core": {
-            "locked": "3.4.7"
+            "locked": "3.4.8"
         },
         "io.projectreactor:reactor-test": {
-            "locked": "3.4.7"
+            "locked": "3.4.8"
         },
         "org.jetbrains.kotlin:kotlin-bom": {
             "locked": "1.4.32"
@@ -431,7 +439,7 @@
     },
     "testRuntimeClasspath": {
         "com.apollographql.federation:federation-graphql-java-support": {
-            "locked": "0.6.3"
+            "locked": "0.6.4"
         },
         "com.fasterxml.jackson.datatype:jackson-datatype-jsr310": {
             "locked": "2.12.3"
@@ -453,7 +461,7 @@
                 "com.netflix.graphql.dgs:graphql-dgs-mocking",
                 "com.netflix.graphql.dgs:graphql-error-types"
             ],
-            "locked": "16.2"
+            "locked": "17.0"
         },
         "com.jayway.jsonpath:json-path": {
             "locked": "2.6.0"
@@ -472,13 +480,13 @@
             "project": true
         },
         "io.mockk:mockk": {
-            "locked": "1.11.0"
+            "locked": "1.12.0"
         },
         "io.projectreactor:reactor-core": {
-            "locked": "3.4.7"
+            "locked": "3.4.8"
         },
         "io.projectreactor:reactor-test": {
-            "locked": "3.4.7"
+            "locked": "3.4.8"
         },
         "org.jetbrains.kotlin:kotlin-bom": {
             "locked": "1.4.32"
